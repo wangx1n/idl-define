@@ -1,4 +1,4 @@
-module idl-define/facade
+module github.com/wangx1n/idl-define/facade
 
 go 1.21.4
 
