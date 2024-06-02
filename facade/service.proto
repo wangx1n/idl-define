@@ -1,0 +1,10 @@
+syntax = "proto3";
+package facade;
+
+option go_package = "./facade_rpc";
+
+import "messages.proto";
+
+service SearchService {
+  rpc UploadFileSlice (UploadFileSliceRequest) returns (UploadFileSliceResponse);
+}

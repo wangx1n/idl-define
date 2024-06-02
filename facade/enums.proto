@@ -1,0 +1,13 @@
+syntax = "proto3";
+package facade;
+
+option go_package = "./facade_rpc";
+
+enum FileType {
+  UNKNOW = 0;
+  // video
+  VIDEO = 10;
+
+  // page photo
+  PNG = 100;
+}

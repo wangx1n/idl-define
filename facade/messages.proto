@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package facade;
+
+import "enums.proto";
+
+option go_package = "./facade_rpc";
+
+message BaseResponse {
+  int64 statusCode = 1;
+  string message = 2;
+}
+
+message UploadFileSliceRequest {
+  FileType fileType = 1;
+  bytes fileContent = 2;
+  int64 sliceSeries = 3;
+  string checkSum = 4;
+}
+
+message UploadFileSliceResponse {
+  BaseResponse baseResponse = 1;
+}
