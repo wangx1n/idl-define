@@ -4,7 +4,7 @@ package facade;
 
 import "enums.proto";
 
-option go_package = "./facade_rpc";
+option go_package = "github.com/wangx1n/idl-define/facade";
 
 message BaseResponse {
   int64 statusCode = 1;
